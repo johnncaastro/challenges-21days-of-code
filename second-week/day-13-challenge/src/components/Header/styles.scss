@@ -1,0 +1,74 @@
+header {
+  width: 100vw;
+  height: 5rem;
+  padding: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    list-style: none;
+
+    a {
+      transition: text-decoration 0.2s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .signup-button {
+      padding: 0.5rem 1.4rem;
+      border: 2px solid #fff;
+      border-radius: 5rem;
+
+      color: #fff;
+      background-color: transparent;
+
+      transition: 0.2s;
+
+      &:hover {
+        color: #4d38ad;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.menu-button {
+  border: none;
+  display: none;
+
+  background-color: transparent;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+}

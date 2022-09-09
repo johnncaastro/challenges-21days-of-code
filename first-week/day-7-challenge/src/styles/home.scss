@@ -1,0 +1,42 @@
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .counter-container {
+    text-align: center;
+
+    strong {
+      font-size: 4rem;
+    }
+  }
+
+  .controls-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    button {
+      border: none;
+      border-radius: 5rem;
+      padding: 1rem;
+      cursor: pointer;
+
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #7519e6;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}

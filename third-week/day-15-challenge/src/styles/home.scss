@@ -1,0 +1,38 @@
+.main-container {
+  width: 100vw;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+
+  div {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    transition: border;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 2.5rem;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      color: #8a8a9c;
+    }
+
+    p {
+      color: #ab3abd;
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      border: 1px solid #ab3abd;
+      padding: 0.4rem;
+    }
+  }
+}

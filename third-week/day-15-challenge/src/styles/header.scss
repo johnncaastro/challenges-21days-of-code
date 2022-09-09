@@ -1,0 +1,51 @@
+.header-container {
+  width: 100vw;
+  height: 6rem;
+  padding: 3rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 2.6rem;
+
+    list-style: none;
+
+    li {
+      color: #8a8a9c;
+
+      transition: 0.2s;
+
+      &:hover {
+        color: #ae57bb;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    gap: 1.4rem;
+
+    button {
+      border: none;
+      border-radius: 50%;
+      padding: 0.5rem;
+
+      background-color: #fff;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}
